@@ -1,0 +1,231 @@
+@import "bienvenida";
+@import "key";
+
+
+
+/*Variables*/
+$color-primary: #6495ed;
+
+/*Header*/
+
+header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: $color-primary;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    
+    .logo{
+        display: flex;
+        justify-content: center;
+        width: 120px;
+        margin: 3%;
+    }
+}
+    
+.todo__lamparas{
+    display: none;
+    justify-content: center;
+    margin: 2%;
+    font-size: 170%;
+    color: hsla(0, 0%, 100%, 0.726);
+}
+    
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+        margin-top: 12%;
+        column-gap: 5%;
+        
+        a {
+            text-decoration: none;
+            color: black;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: 4%;
+            
+            &:hover{
+                color: white;
+            }
+        }
+    }
+
+
+body{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+} 
+    
+/*Index*/
+
+.main__inicio{
+    display: block;
+    grid-template-rows: (30% 70%);
+
+    img{
+        animation: from-right 3s ease;
+    }
+}
+
+.cuerpo__texto{
+    width: auto;
+    font-size: 140%;
+    animation: from-behind 3s ease;
+}
+
+/* Galería */
+
+.main__galería {
+
+    .row{
+        margin: 1%;
+    } 
+
+    img{
+        height: 68%;
+        animation: from-bottom 1.5s ease;
+        transition: opacity 1s;
+    }
+}
+
+figure img:hover{
+    opacity: 0.5;
+}
+
+/*Lista*/
+
+.main__lista{
+    margin: 8%;
+    h3{
+        display: flex;
+        justify-content: center;
+    }
+    ul{
+        h1{
+            font-size: 35px;
+        }
+        li{
+            margin-top: 4%;
+        }
+    }
+}
+
+/*Formulario*/
+
+.main__formulario{
+    h3 {
+        text-align: center;
+        margin: 8%;
+    }
+
+    .formulario{
+        background-color: rgb(194, 194, 194);
+        margin: 10%;
+        text-align: center;
+        border-radius: 20px;
+        padding: 2%;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+    .col-12{
+        margin: 2%,;
+    }
+
+    .formulario__enviar{
+        background-color: $color-primary;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 130%;
+        border-radius: 10px;
+        border: none;
+        height: 50px;
+        width: 100px;
+        
+        &:hover{
+            background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.26));
+        }
+    }
+} 
+
+
+/*Contacto*/
+
+.main__contacto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10%;
+    margin: 15%;
+    justify-content: center;
+
+    .col-auto{
+        text-align: center;
+        margin: 5%;
+    }
+
+    .mail{
+        font-size: 22px;
+        margin: 15px;
+        margin-bottom: 35px;
+    }
+}
+
+/*Footer*/
+
+footer{
+    background-color: $color-primary;
+    display: column;
+    text-align: center;
+    padding: 10px;
+    margin-top: 5%;
+
+    p{
+        color: white;
+        font-size: 30px;
+        margin: 10px;
+    }
+}
+
+/*MEDIA*/
+
+
+@media screen and (max-width: 768px) {
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }  
+    nav ul {
+        display: block;
+    }
+    header .logo{
+        width: 180px;
+        margin: auto;
+    }
+    .main__contacto{
+    grid-template-columns: repeat(1, 1fr);
+    }  
+    .todo__lamparas{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main__inicio .inicio__cuerpo {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 8%;
+    }  
+    header .logo{
+        display: none;
+    }  
+}
+
+
+@media screen and (max-width: 350px) {
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }   
+}

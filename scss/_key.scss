@@ -1,0 +1,32 @@
+@keyframes from-behind{
+    0%{
+        opacity: 0;
+        transform: translatez(90px);
+    }
+    100%{
+        opacity: 1;
+        transform: translatez(0px);
+    }
+}
+
+@keyframes from-right{
+    0%{
+        opacity: 0;
+        transform: translatex(90px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes from-bottom {
+    0%{
+        opacity: 0;
+        transform: translateY(120px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
