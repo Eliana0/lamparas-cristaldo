@@ -1,0 +1,35 @@
+@import "maps";
+
+@mixin body($letter) {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: $letter;
+}
+
+@mixin center($display) {
+text-align: center;
+justify-content: center;
+display: ($display);
+}
+
+@mixin boton {
+    background-color: map-get($colors, colorPrimary);
+    font-family: $letter;
+    font-size: 130%;
+    border-radius: 10px;
+    border: none;
+    
+    &:hover{
+        background-image: $bottom_hover
+    }
+}
+
+@mixin formulario ($formulario: true) {
+    @if $formulario{
+        background-color: map-get($colors, colorG);
+        margin: 10%;
+        border-radius: 20px;
+        padding: 2%;
+    }
+}
