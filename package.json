@@ -6,7 +6,7 @@
     "compile:sass": "sass --watch scss/style.scss css/style.css"
   },
   "keywords": [],
-  "author": "",
+  "author": "Eliana Cristaldo",
   "license": "ISC",
   "repository": {
     "type": "git",
@@ -16,5 +16,5 @@
     "url": "https://github.com/Eliana0/lamparas-cristaldo/issues"
   },
   "homepage": "https://github.com/Eliana0/lamparas-cristaldo#readme",
-  "description": ""
+  "description": "Tienda online de venta de lámparas"
 }
