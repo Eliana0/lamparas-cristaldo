@@ -60,17 +60,12 @@ body{
 /*Index*/
 
 .main__inicio{
-
-    display: block;
-    grid-template-rows: (30% 70%);
-
     img{
         animation: from-right 3s ease;
     }
 }
 
 .cuerpo__texto{
-    width: auto;
     font-size: 150%;
     animation: from-behind 3s ease;    
 }
@@ -79,7 +74,6 @@ body{
     @extend .bienvenida;
     text-shadow: $shadow;
 }
-
 
 /* Galería */
 
@@ -189,10 +183,22 @@ footer{
 
 /*MEDIA*/
 
+@media screen and (min-width: 768px) and (max-width: 1000px){
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 2%;
+        nav{
+            align-self: flex-start;
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     header{
         grid-template-columns: repeat(1, 1fr);
-    }  
+    } 
     nav ul {
         display: block;
     }
@@ -212,10 +218,6 @@ footer{
     header{
         grid-template-columns: repeat(1, 1fr);
     }
-    .main__inicio .inicio__cuerpo {
-        grid-template-columns: repeat(2, 1fr);
-        margin: 8%;
-    }  
     header .logo{
         display: none;
     }  
