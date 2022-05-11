@@ -59,6 +59,11 @@ body{
     
 /*Index*/
 
+.inicio__cuerpo{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
 .main__inicio{
     img{
         animation: from-right 3s ease;
@@ -67,7 +72,8 @@ body{
 
 .cuerpo__texto{
     font-size: 150%;
-    animation: from-behind 3s ease;    
+    animation: from-behind 3s ease; 
+    margin: 2%;   
 }
 
 .slogan{
@@ -205,6 +211,9 @@ footer{
     header .logo{
         width: 180px;
         margin: auto;
+    }
+    .inicio__cuerpo{
+        display: block;
     }
     .main__contacto{
     grid-template-columns: repeat(1, 1fr);
