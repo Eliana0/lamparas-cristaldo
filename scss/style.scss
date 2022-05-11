@@ -54,15 +54,9 @@ header{
 
 body{
     @include body($letter);
-    /*font-size: larger;*/
 } 
     
 /*Index*/
-
-.inicio__cuerpo{
-    display: grid;
-    grid-template-columns: 40% 60%;
-}
 
 .main__inicio{
     img{
@@ -70,8 +64,13 @@ body{
     }
 }
 
+.inicio__cuerpo{
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
 .cuerpo__texto{
-    font-size: 150%;
+    font-size: 130%;
     animation: from-behind 3s ease; 
     margin: 2%;   
 }
@@ -84,10 +83,6 @@ body{
 /* Galería */
 
 .main__galería {
-
-    .row{
-        margin: 1%;
-    } 
 
     img{
         height: 68%;
@@ -104,15 +99,13 @@ figure img:hover{
 
 .main__lista{
     margin: 8%;
-    h3{
-        @include center(flex);
-    }
     ul{
         h1{
             font-size: 150%;
         }
         li{
             margin-top: 4%;
+            font-size: 120%;
         }
     }
 }

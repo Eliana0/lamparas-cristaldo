@@ -86,21 +86,20 @@ body {
   padding: 0%;
   margin: 0%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  /*font-size: larger;*/
 }
 
 /*Index*/
-.inicio__cuerpo {
-  display: grid;
-  grid-template-columns: 40% 60%;
-}
-
 .main__inicio img {
   animation: from-right 3s ease;
 }
 
+.inicio__cuerpo {
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+
 .cuerpo__texto {
-  font-size: 150%;
+  font-size: 130%;
   animation: from-behind 3s ease;
   margin: 2%;
 }
@@ -110,9 +109,6 @@ body {
 }
 
 /* Galería */
-.main__galería .row {
-  margin: 1%;
-}
 .main__galería img {
   height: 68%;
   animation: from-bottom 1.5s ease;
@@ -127,16 +123,12 @@ figure img:hover {
 .main__lista {
   margin: 8%;
 }
-.main__lista h3 {
-  text-align: center;
-  justify-content: center;
-  display: flex;
-}
 .main__lista ul h1 {
   font-size: 150%;
 }
 .main__lista ul li {
   margin-top: 4%;
+  font-size: 120%;
 }
 
 /*Formulario*/
